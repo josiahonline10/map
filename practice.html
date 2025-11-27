@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Interactive Map</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background: blue;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color:white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 120px);
+        }
+        .sidebar {
+            width: 300px;
+            background: blue;
+            color: white;
+            padding: 15px;
+            overflow-y: auto;
+        }
+        .map-area {
+            flex-grow: 1;
+            background: #bdc3c7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            color: #333;
+        }
+        .search-bar {
+            padding: 15px;
+            background: #f3f3f3;
+        }
+        .search-bar input {
+            width: 99%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div><strong> School Interactive Map </stong></div>
+    <nav>
+        <a href="url">Home</a>
+        <a href="url">Map</a>
+        <a href="url">Buildings</a>
+        <a href="url">Offices</a>
+        <a href="url">About</a>
+    </nav>
+</header>
+
+<div class="search-bar">
+    <input type="text" placeholder="Search room, building, or facility...">
+</div>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li>Classrooms</li>
+            <li>Offices</li>
+            <li>Facilities</li>
+        </ul>
+
+        <h3>Room List</h3>
+        <ul>
+            <li>Room 101</li>
+            <li>Room 102</li>
+            <li>Faculty Office</li>
+            <li>Registrar</li>
+        </ul>
+    </div>
+
+    <div class="map-area">
+        Interactive Map Placeholder
+    </div>
+</div>
+
+</body>
+</html>
